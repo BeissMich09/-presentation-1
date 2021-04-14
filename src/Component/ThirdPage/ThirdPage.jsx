@@ -11,7 +11,15 @@ const ThirdPage = (props) => {
   };
   console.log(props.inputValue);
   return (
-    <div className={style.thirdPage}>
+    <div
+      onMouseLeave={() => {
+        props.changeStatePage("page3", false);
+      }}
+      onMouseEnter={() => {
+        props.changeStatePage("page3", true);
+      }}
+      className={style.thirdPage}
+    >
       <div className={style.thirdPage_pages}>
         {+props.inputValue === 0 ? (
           <ThirdPage1998 />

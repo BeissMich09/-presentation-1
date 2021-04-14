@@ -50,8 +50,15 @@
 .point_menu div {
     height: 13px;
     width: 13px;
-    background-color: #f78b1f;
     border-radius: 50%;
+}
+
+.orange {
+    background-color: #f78b1f;
+}
+
+.white {
+    background-color: white;
 }
 
 .titlePage div p {

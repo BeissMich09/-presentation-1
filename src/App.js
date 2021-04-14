@@ -1,16 +1,8 @@
 import "./App.css";
-import SecondPage from "./Component/SecondPage/SecondPage";
-import ThirdPageContainer from "./Component/ThirdPage/ThirdPageContainer";
-import TitlePage from "./Component/TitlePage/TitlePage";
+import Container from "./Component/Container/Container";
 
 function App() {
-  return (
-    <div className="App">
-      <TitlePage />
-      <SecondPage />
-      <ThirdPageContainer />
-    </div>
-  );
+  return <Container />;
 }
 
 export default App;
