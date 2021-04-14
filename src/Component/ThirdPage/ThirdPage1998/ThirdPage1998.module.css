@@ -1,0 +1,200 @@
+.thirdPage {
+    position: relative;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thirdPage h3 {
+    position: absolute;
+    top: 0;
+    font-size: 48px;
+    font-weight: 300;
+    width: 88%;
+}
+
+.thirdPage img {
+    width: 100vw;
+    height: 100vh;
+}
+
+.scheme {
+    position: absolute;
+    top: 21%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 53%;
+}
+
+.scheme_second_link {
+    display: flex;
+    align-items: center;
+}
+
+.beta_beta {
+    font-size: 60px;
+}
+
+.img_with_arrow {
+    display: flex;
+    align-items: center;
+}
+
+.capa_text,
+.musle_text {
+    position: absolute;
+    text-align: center;
+    bottom: 83px;
+}
+
+.musle,
+.capa {
+    position: relative;
+}
+
+.musle_text {
+    left: 5px;
+}
+
+.capa_text {
+    left: 88px;
+}
+
+.arrow_capa {
+    transform: rotate(180deg);
+}
+
+.beta_text p,
+.musle p,
+.capa p {
+    margin: 0;
+}
+
+.musle_img,
+.capa_img,
+.beta_beta {
+    width: 70px;
+    height: 70px;
+    background-color: #414589;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hyperglycemia {
+    border: solid white 1px;
+    width: 500px;
+    width: 302px;
+    height: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.musle_img img,
+.capa_img img {
+    height: 60px;
+    width: 60px;
+}
+
+.arrow_musle,
+.arrow_capa,
+.arrow_beta_r,
+.arrow_beta_l,
+.arrow_beta_center {
+    /* border: 1px solid red; */
+    width: 58px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.arrows_beta {
+    display: flex;
+    position: relative;
+}
+
+.arrow_beta_l {
+    transform: rotate(135deg);
+    width: 262px;
+    position: absolute;
+    right: -2px;
+    top: -13px;
+}
+
+.arrow_beta_l .arrow {
+    width: 259px;
+}
+
+.arrow_beta_r {
+    transform: rotate(45deg);
+    width: 262px;
+    position: absolute;
+    bottom: -38px;
+}
+
+.arrow_beta_r .arrow {
+    width: 259px;
+}
+
+.arrow_beta_center {
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 15px;
+    right: -41px;
+}
+
+.arrow_beta_center .arrow {
+    width: 135px;
+}
+
+.arrow {
+    display: block;
+    position: absolute;
+    width: 56px;
+    height: 1px;
+    background-color: white;
+}
+
+.arrow:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 1px;
+    background-color: white;
+    transform: rotate(-20deg);
+    transform-origin: 100% 0%;
+}
+
+.arrow:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 1px;
+    background-color: white;
+    transform: rotate(20deg);
+    transform-origin: 100% 0%;
+}
+
+.num {
+    font-size: 36px;
+}
+
+.text {
+    font-size: 20px;
+}

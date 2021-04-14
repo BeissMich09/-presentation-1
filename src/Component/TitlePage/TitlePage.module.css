@@ -1,0 +1,203 @@
+.titlePage {
+    position: relative;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    color: #0d319c;
+    width: 100vw;
+}
+
+.titlePage img {
+    min-height: 100%;
+    min-width: 640px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.titlePage h1 {
+    position: absolute;
+    font-size: 50px;
+    font-weight: 400;
+    width: 679px;
+    margin: 0;
+    margin-left: 115px;
+    margin-top: 77px;
+}
+
+.hypoglycemia,
+.target,
+.risks,
+.complications,
+.down,
+.horizont_line {
+    position: relative;
+}
+
+.point_menu {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 50%;
+    left: 95%;
+    position: fixed;
+    z-index: 5;
+}
+
+.point_menu div {
+    height: 13px;
+    width: 13px;
+    background-color: #f78b1f;
+    border-radius: 50%;
+}
+
+.titlePage div p {
+    font-weight: 400;
+}
+
+.target {
+    display: flex;
+    align-items: center;
+    top: 23%;
+    left: 46%;
+    width: 223px;
+}
+
+.target p {
+    position: absolute;
+    left: 132px;
+    width: 116px;
+}
+
+.hypoglycemia {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 15%;
+    left: 23%;
+    width: 109px;
+}
+
+.hypoglycemia .point {
+    width: 15px;
+    height: 15px;
+}
+
+.hypoglycemia p {
+    position: absolute;
+    top: 64px;
+}
+
+.risks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 88px;
+    left: 43%;
+}
+
+.risks div {
+    width: 12px;
+    height: 12px;
+}
+
+.risks p {
+    position: absolute;
+    top: 65px;
+}
+
+.complications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 143px;
+    left: 74%;
+    bottom: 30%;
+}
+
+.complications .point {
+    width: 10px;
+    height: 10px;
+}
+
+.complications p {
+    position: absolute;
+    top: 59px;
+}
+
+.titlePage p {
+    padding: 0;
+    margin: 0;
+}
+
+.point {
+    margin: 100px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #cc8149;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(226, 122, 28, 0.8);
+    animation: pulse 2s infinite;
+}
+
+.down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    bottom: 20%;
+    z-index: 5;
+}
+
+.arrow {
+    width: 13px;
+    height: 13px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.horizont_line {
+    position: relative;
+    width: 57%;
+    height: 15px;
+    background-color: #f78b20;
+    margin: 0 auto;
+    -webkit-box-shadow: 1px -15px 31px 22px rgba(247, 139, 32, 1);
+    -moz-box-shadow: 1px -15px 31px 22px rgba(247, 139, 32, 1);
+    box-shadow: 1px -15px 31px 22px rgba(247, 139, 32, 1);
+    bottom: 16%;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(226, 122, 28, 0.8);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(226, 122, 28, 0.8);
+        box-shadow: 0 0 0 0 rgba(226, 122, 28, 0.8);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    }
+}

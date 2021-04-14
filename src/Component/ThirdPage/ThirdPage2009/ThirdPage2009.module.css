@@ -1,0 +1,239 @@
+.thirdPage {
+    position: relative;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thirdPage h3 {
+    position: absolute;
+    top: 0;
+    font-size: 48px;
+    font-weight: 300;
+    width: 88%;
+}
+
+.thirdPage img {
+    width: 100vw;
+    height: 100vh;
+}
+
+.scheme {
+    position: absolute;
+    display: flex;
+    height: 57%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scheme img {
+    height: 60px;
+    width: 60px;
+}
+
+.scheme_top,
+.scheme_center,
+.scheme_bottom {
+    display: flex;
+}
+
+.scheme_top,
+.scheme_bottom {
+    width: 43%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.scheme_center {
+    align-items: center;
+}
+
+.hyperglycemia {
+    border: solid white 1px;
+    width: 340px;
+    height: 134px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.musle_img,
+.capa_img,
+.beta_beta,
+.img,
+.brain_img,
+.lipid_img,
+.bud_img {
+    width: 70px;
+    height: 70px;
+    background-color: #414589;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beta_beta,
+.img {
+    margin-bottom: 9px;
+}
+
+.brain_img,
+.musle_img,
+.capa_img {
+    margin-top: 9px;
+}
+
+.effect,
+.deffect_alpha,
+.bud,
+.img_with_arrow_bud,
+.img_with_arrow_lipid,
+.lipid {
+    display: flex;
+}
+
+.effect p {
+    margin: 0;
+}
+
+.effect_text {
+    text-align: end;
+    position: absolute;
+    right: 74px;
+    top: 13px;
+}
+
+.effect,
+.deffect_alpha,
+.beta {
+    position: relative;
+}
+
+.alpha_text {
+    position: absolute;
+    left: 76px;
+    top: 12px;
+}
+
+.lipid_arrow {
+    transform: rotate(180deg);
+}
+
+.musle_arrow,
+.brain_arrow,
+.capa_arrow {
+    transform: rotate(270deg);
+}
+
+.beta_text {
+    position: absolute;
+    bottom: 141px;
+    text-align: center;
+    width: 79px;
+}
+
+.beta_beta,
+.img p {
+    font-size: 60px;
+}
+
+.effect_arrow,
+.beta_arrow,
+.apha_arrow {
+    transform: rotate(90deg);
+}
+
+.beta_text p,
+.musle p,
+.capa p,
+.brain p,
+.lipid p,
+.bud p,
+.alpha_text {
+    margin: 0;
+}
+
+.bud p {
+    text-align: end;
+}
+
+.brain p,
+.lipid p,
+.alpha_text {
+    width: 87px;
+}
+
+.bud_arrow,
+.apha_arrow,
+.beta_arrow,
+.effect_arrow,
+.bud_arrow,
+.lipid_arrow,
+.brain_arrow,
+.musle_arrow,
+.capa_arrow {
+    /* border: 1px solid red; */
+    width: 62px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.lipid_arrow,
+.bud_arrow {
+    height: 70px;
+}
+
+.num {
+    font-size: 35px;
+}
+
+.text,
+.effect_text,
+.alpha_text {
+    font-size: 20px;
+}
+
+.scheme_bottom .text,
+.scheme_bottom .num {
+    text-align: center;
+}
+
+.arrow {
+    display: block;
+    position: absolute;
+    width: 56px;
+    height: 1px;
+    background-color: white;
+}
+
+.arrow:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 1px;
+    background-color: white;
+    transform: rotate(-20deg);
+    transform-origin: 100% 0%;
+}
+
+.arrow:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 1px;
+    background-color: white;
+    transform: rotate(20deg);
+    transform-origin: 100% 0%;
+}

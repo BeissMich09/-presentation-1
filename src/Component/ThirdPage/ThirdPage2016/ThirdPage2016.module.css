@@ -1,0 +1,624 @@
+.thirdPage {
+    position: relative;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thirdPage h3 {
+    position: absolute;
+    top: 0;
+    font-size: 48px;
+    font-weight: 300;
+    width: 88%;
+}
+
+.thirdPage img {
+    width: 100vw;
+    height: 100vh;
+}
+
+.scheme img {
+    height: 60px;
+    width: 60px;
+}
+
+.scheme {
+    position: absolute;
+    top: 18%;
+    display: flex;
+    right: 5%;
+}
+
+.link_first_scheme,
+.link_second_scheme,
+.link_third_scheme {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link_first_scheme p {
+    padding: 0;
+    margin: 0;
+}
+
+.intestine,
+.infection,
+.stomach {
+    display: flex;
+}
+
+.intestine_text,
+.stomach_text,
+.infection_text {
+    text-align: end;
+}
+
+.intestine_text p,
+.stomach_text p,
+.infection_text p {
+    margin: 0;
+    padding: 0;
+}
+
+.intestine_img,
+.infection_img,
+.stomach_img,
+.but_img,
+.brain_img,
+.capa_img,
+.musle_img,
+.lipid_img,
+.bud_img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #414589;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infection {
+    position: relative;
+    margin-top: 25px;
+}
+
+.infection_text {
+    position: absolute;
+    width: 205px;
+    right: 80px;
+    bottom: -25px;
+}
+
+.amelin {
+    margin-top: 25px;
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.beta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.glucogon_with_arrow p {
+    margin: 0;
+}
+
+.intestine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 76px;
+}
+
+.intestine_text {
+    position: absolute;
+    right: 80px;
+}
+
+.link_first_arrow {
+    transform: rotate(90deg);
+}
+
+.stomach_arrow,
+.amelin_arrow_l {
+    display: flex;
+    align-items: center;
+}
+
+.stomach_arrow .arrow {
+    width: 128px;
+}
+
+.arrow {
+    display: block;
+    position: absolute;
+    width: 56px;
+    height: 1px;
+    background-color: white;
+}
+
+.arrow:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 1px;
+    background-color: white;
+    transform: rotate(-20deg);
+    transform-origin: 100% 0%;
+}
+
+.arrow:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 1px;
+    background-color: white;
+    transform: rotate(20deg);
+    transform-origin: 100% 0%;
+}
+
+.beta_beta {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #414589;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.beta_text,
+.but,
+.brain,
+.lipid,
+.musle,
+.capa {
+    display: flex;
+}
+
+.brain {
+    margin-top: 76px;
+}
+
+.link_second_scheme_container {
+    display: flex;
+    margin-top: 34px;
+}
+
+.effect {
+    width: 153px;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.deffect_alpha {
+    display: flex;
+    flex-direction: column;
+}
+
+.insulin {
+    height: 305px;
+    width: 257px;
+    border-radius: 15%;
+    background: linear-gradient(180deg, #2b306e, #141b47, #050e27);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.capa,
+.musle,
+.lipid {
+    width: 80%;
+}
+
+.lipid {
+    position: relative;
+}
+
+.lipid_text {
+    position: absolute;
+    left: 77px;
+    width: 150px;
+}
+
+.num {
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.text {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.range_container {
+    position: absolute;
+}
+
+.arrows_colection {
+    width: 7px;
+    height: 150px;
+    position: relative;
+}
+
+.insulin_bodies {
+    height: 77%;
+    width: 81%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.arrows_left_right_intestine {
+    position: absolute;
+    top: 96px;
+    right: 6px;
+    transform: rotate(352deg);
+}
+
+.arrows_colection div {
+    width: 50px;
+    height: 50px;
+}
+
+.amelin_arrow,
+.stomach_arrow {
+    position: relative;
+}
+
+.arrows_left_right_brain,
+.bud_arrow,
+.arrows_left_right_bud {
+    width: 27px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transform: rotate(90deg);
+}
+
+.bud {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_with_arrow_bud {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_with_arrow_stomach {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrows_left_right_brain .arrow,
+.arrows_left_right_brain .arrow_second,
+.arrows_left_right_bud .arrow,
+.arrows_left_right_bud .arrow_second {
+    width: 25px;
+}
+
+.arrows_left_right_brain .arrow_second::after,
+.arrows_left_right_brain .arrow_second::before,
+.arrows_left_right_bud .arrow_second::after,
+.arrows_left_right_bud .arrow_second::before {
+    right: 25px;
+}
+
+.arrows_beta {
+    display: flex;
+}
+
+.arrows_beta,
+.arrow_beta_l,
+.arrow_beta_center,
+.arrow_beta_r,
+.arrow_beta_l_l,
+.arrow_alpha,
+.arrow_glucogon,
+.arrow_effect,
+.amelin_arrow,
+.amelin_arrow_l,
+.amelin_arrow_r,
+.stomach_arrow {
+    position: relative;
+}
+
+.arrow_beta_l,
+.arrow_beta_center,
+.arrow_beta_r,
+.arrow_beta_l_l,
+.arrow_alpha,
+.arrow_glucogon,
+.arrow_effect,
+.amelin_arrow_l,
+.amelin_arrow_r,
+.stomach_arrow {
+    width: 50px;
+    height: 50px;
+}
+
+.amelin_arrows {
+    display: flex;
+}
+
+.amelin_arrow_l,
+.arrow_beta_l,
+.arrow_beta_center,
+.arrow_beta_r,
+.arrow_effect,
+.arrow_glucogon,
+.arrow_alpha {
+    transform: rotate(90deg);
+}
+
+.arrow_effect,
+.arrow_alpha,
+.arrow_glucogon {
+    display: flex;
+}
+
+.arrow_alpha,
+.arrow_glucogon,
+.amelin_arrow_l {
+    width: 25px;
+    height: 25px;
+}
+
+.arrow_beta_center,
+.arrow_beta_l,
+.arrow_beta_r,
+.arrow_beta_l_l {
+    display: flex;
+    height: 15px;
+    width: 15px;
+    align-items: center;
+}
+
+.arrow_effect {
+    margin-right: 7px;
+}
+
+.arrow_beta_l_l {
+    position: absolute;
+    right: 66px;
+    transform: rotate(142deg);
+}
+
+.arrow_beta_l_l .arrow {
+    width: 236px;
+}
+
+.arrow_beta_center .arrow {
+    width: 203px;
+}
+
+.hyperglicemia_with_arrow {
+    margin-top: 30px;
+}
+
+.link_second_scheme {
+    justify-content: space-between;
+    height: 427px;
+}
+
+.arrow_alpha,
+.arrow_glucogon {
+    align-items: flex-end;
+}
+
+.glucogon {
+    display: flex;
+    flex-direction: column;
+    margin-left: 28px;
+}
+
+.bud_text {
+    position: absolute;
+    right: 105px;
+}
+
+.amelin_arrow_r {
+    position: absolute;
+    transform: rotate(17deg);
+    top: 28px;
+    left: 63px;
+}
+
+.amelin_arrow_r .arrow {
+    width: 145px;
+}
+
+.arrow_alpha .arrow,
+.arrow_glucogon .arrow,
+.amelin_arrow_l .arrow {
+    width: 22px;
+}
+
+.arrow,
+.arrow_second {
+    display: block;
+    position: absolute;
+    width: 56px;
+    height: 1px;
+    background-color: white;
+}
+
+.arrow_second {
+    margin-top: 10px;
+}
+
+.arrow:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 1px;
+    background-color: black;
+    transform: rotate(-20deg);
+    transform-origin: 100% 0%;
+}
+
+.arrow:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 1px;
+    background-color: black;
+    transform: rotate(20deg);
+    transform-origin: 100% 0%;
+}
+
+.arrow_second::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: 55px;
+    width: 10px;
+    height: 1px;
+    background-color: white;
+    transform: rotate(160deg);
+    transform-origin: 100% 0%;
+}
+
+.arrow_second:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: 55px;
+    width: 10px;
+    height: 1px;
+    background-color: white;
+    transform: rotate(-160deg);
+    transform-origin: 100% 0%;
+}
+
+.arrow:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 1px;
+    background-color: white;
+    transform: rotate(-20deg);
+    transform-origin: 100% 0%;
+}
+
+.arrow:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 1px;
+    background-color: white;
+    transform: rotate(20deg);
+    transform-origin: 100% 0%;
+}
+
+.arrow_glucogon .arrow {
+    width: 35px;
+}
+
+.arrows_left_right_intestine .arrow_second,
+.arrows_left_right_intestine .arrow {
+    width: 178px;
+}
+
+.arrows_left_right_intestine .arrow_second::after,
+.arrows_left_right_intestine .arrow_second::before {
+    right: 182px;
+}
+
+.arrows_left_right_infection {
+    position: absolute;
+    top: 178px;
+    right: 7px;
+    transform: rotate(333deg);
+}
+
+.arrows_left_right_infection .arrow_second,
+.arrows_left_right_infection .arrow {
+    width: 208px;
+}
+
+.arrows_left_right_infection .arrow_second::after,
+.arrows_left_right_infection .arrow_second::before {
+    right: 211px;
+}
+
+.arrows_left_right_brain_beta {
+    position: absolute;
+    top: 66px;
+    right: 80px;
+    transform: rotate(11deg);
+}
+
+.arrows_left_right_brain_beta .arrow_second,
+.arrows_left_right_brain_beta .arrow {
+    width: 154px;
+}
+
+.arrows_left_right_brain_beta .arrow_second::after,
+.arrows_left_right_brain_beta .arrow_second::before {
+    right: 154px;
+}
+
+.arrows_left_right_insulin {
+    position: absolute;
+    right: 93px;
+    top: 104px;
+    transform: rotate(37deg);
+}
+
+.arrows_left_right_insulin .arrow_second,
+.arrows_left_right_insulin .arrow {
+    width: 154px;
+}
+
+.arrows_left_right_insulin .arrow_second::after,
+.arrows_left_right_insulin .arrow_second::before {
+    right: 154px;
+}

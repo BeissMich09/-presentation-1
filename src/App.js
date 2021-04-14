@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import SecondPage from "./Component/SecondPage/SecondPage";
+import ThirdPageContainer from "./Component/ThirdPage/ThirdPageContainer";
+import TitlePage from "./Component/TitlePage/TitlePage";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TitlePage />
+      <SecondPage />
+      <ThirdPageContainer />
     </div>
   );
 }
