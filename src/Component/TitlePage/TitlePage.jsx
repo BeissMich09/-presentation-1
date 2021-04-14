@@ -3,7 +3,6 @@ import background from "./../assets/Page1.png";
 import style from "./TitlePage.module.css";
 
 const TitlePage = (props) => {
-  console.log(props.state);
   return (
     <div
       onMouseLeave={() => {

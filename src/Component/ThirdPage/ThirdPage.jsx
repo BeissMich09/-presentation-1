@@ -9,7 +9,7 @@ const ThirdPage = (props) => {
   let listener = (value) => {
     return -width * value;
   };
-  console.log(props.inputValue);
+
   return (
     <div
       onMouseLeave={() => {
