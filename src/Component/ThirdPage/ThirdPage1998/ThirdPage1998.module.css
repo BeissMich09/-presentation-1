@@ -32,6 +32,10 @@
     height: 53%;
 }
 
+.beta .num {
+    text-align: center;
+}
+
 .scheme_second_link {
     display: flex;
     align-items: center;

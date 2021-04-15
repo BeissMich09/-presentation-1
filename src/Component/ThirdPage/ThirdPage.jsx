@@ -8,9 +8,9 @@ const ThirdPage = (props) => {
   return (
     <div className={style.thirdPage}>
       <div className={style.thirdPage_pages}>
-        {+props.inputValue === 0 ? (
+        {+props.inputValue < 33 ? (
           <ThirdPage1998 />
-        ) : +props.inputValue === 1 ? (
+        ) : +props.inputValue < 66 ? (
           <ThirdPage2009 />
         ) : (
           <ThirdPage2016 />
@@ -21,10 +21,14 @@ const ThirdPage = (props) => {
           onChange={(e) => {
             props.getInputValue(e.target.value);
           }}
+          className={style.range}
           value={props.inputValue}
           type="range"
-          max="2"
+          max="100"
           min="0"
+          style={{
+            background: `gradient(  #d1eaff ${props.inputValue}%, #d1eaff ${props.inputValue}%, rgba(209, 234, 255, 0.5) ${props.inputValue}%, rgba(209, 234, 255, 0.5) ${props.inputValue}%);`,
+          }}
         />
       </div>
       <div className={style.years}>
