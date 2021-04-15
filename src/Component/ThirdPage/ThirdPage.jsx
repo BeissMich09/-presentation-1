@@ -27,7 +27,7 @@ const ThirdPage = (props) => {
           max="100"
           min="0"
           style={{
-            background: `gradient(  #d1eaff ${props.inputValue}%, #d1eaff ${props.inputValue}%, rgba(209, 234, 255, 0.5) ${props.inputValue}%, rgba(209, 234, 255, 0.5) ${props.inputValue}%);`,
+            background: `-webkit-linear-gradient( left, #d1eaff 0%, #d1eaff ${props.inputValue}%, rgba(209, 234, 255, 0.5) ${props.inputValue}%, rgba(209, 234, 255, 0.5) 100%)`,
           }}
         />
       </div>
