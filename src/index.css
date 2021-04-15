@@ -14,3 +14,7 @@ code {
     width: 100vw;
     overflow: hidden;
 }
+
+::-webkit-scrollbar {
+    width: 0;
+}

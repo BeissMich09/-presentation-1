@@ -411,6 +411,10 @@
     margin-right: 7px;
 }
 
+.arrow_effect .arrow {
+    width: 64px;
+}
+
 .arrow_beta_l_l {
     position: absolute;
     right: 66px;
@@ -559,7 +563,7 @@
 }
 
 .arrow_glucogon .arrow {
-    width: 35px;
+    width: 42px;
 }
 
 .arrows_left_right_intestine .arrow_second,
