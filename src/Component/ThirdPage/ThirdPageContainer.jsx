@@ -3,7 +3,7 @@ import ThirdPage from "./ThirdPage";
 
 class ThirdPageContainer extends React.Component {
   state = {
-    inputValue: "2",
+    inputValue: "100",
   };
 
   getInputValue = (value) => {
