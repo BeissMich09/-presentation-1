@@ -1,18 +1,10 @@
 import React from "react";
-import background from "./../assets/Page2.png";
+import background from "./../assets/background2.png";
 import style from "./SecondPage.module.css";
 
 const SecondPage = (props) => {
   return (
-    <div
-      onMouseLeave={() => {
-        props.changeStatePage("page2", false);
-      }}
-      onMouseEnter={() => {
-        props.changeStatePage("page2", true);
-      }}
-      className={style.secondPage}
-    >
+    <div className={style.secondPage}>
       <img src={background} alt="" />
       <h2>Основа терапии — патогенез СД2</h2>
       <div className={style.down}>

@@ -5,13 +5,18 @@ import ThirdPageContainer from "./../ThirdPage/ThirdPageContainer";
 
 class Container extends React.Component {
   state = {
-    page1: false,
-    page2: false,
-    page3: false,
+    count: 0,
   };
 
-  changeStatePage = (value, page) => {
-    this.setState({ [value]: page });
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+  handleScroll = () => {
+    this.setState({ count: window.pageYOffset });
   };
 
   render() {

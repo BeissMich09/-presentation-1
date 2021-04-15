@@ -5,21 +5,8 @@ import ThirdPage2009 from "./ThirdPage2009/ThirdPage2009";
 import ThirdPage2016 from "./ThirdPage2016/ThirdPage2016";
 
 const ThirdPage = (props) => {
-  let width = 1024;
-  let listener = (value) => {
-    return -width * value;
-  };
-
   return (
-    <div
-      onMouseLeave={() => {
-        props.changeStatePage("page3", false);
-      }}
-      onMouseEnter={() => {
-        props.changeStatePage("page3", true);
-      }}
-      className={style.thirdPage}
-    >
+    <div className={style.thirdPage}>
       <div className={style.thirdPage_pages}>
         {+props.inputValue === 0 ? (
           <ThirdPage1998 />
@@ -28,15 +15,11 @@ const ThirdPage = (props) => {
         ) : (
           <ThirdPage2016 />
         )}
-        {/* <ThirdPage1998 />
-        <ThirdPage2009 />
-        <ThirdPage2016 /> */}
       </div>
       <div className={style.range_container}>
         <input
           onChange={(e) => {
             props.getInputValue(e.target.value);
-            listener(e.target.value);
           }}
           value={props.inputValue}
           type="range"

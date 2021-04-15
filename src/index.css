@@ -1,6 +1,9 @@
 body {
     margin: 0;
     font-family: "Source Sans Pro", sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
+    -webkit-overflow-x: hidden;
 }
 
 code {

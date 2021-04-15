@@ -4,25 +4,21 @@ import style from "./TitlePage.module.css";
 
 const TitlePage = (props) => {
   return (
-    <div
-      onMouseLeave={() => {
-        props.changeStatePage("page1", false);
-      }}
-      onMouseEnter={() => {
-        props.changeStatePage("page1", true);
-      }}
-      className={style.titlePage}
-    >
+    <div className={style.titlePage}>
       <img src={background} alt="" />
       <div className={style.point_menu}>
         <div
-          className={props.state.page1 === true ? style.orange : style.white}
+          className={props.state.count < 400 ? style.orange : style.white}
         ></div>
         <div
-          className={props.state.page2 === true ? style.orange : style.white}
+          className={
+            props.state.count > 400 && props.state.count < 1100
+              ? style.orange
+              : style.white
+          }
         ></div>
         <div
-          className={props.state.page3 === true ? style.orange : style.white}
+          className={props.state.count > 1100 ? style.orange : style.white}
         ></div>
       </div>
       <h1>Всегда ли цели терапии СД2 на поверхности?</h1>
