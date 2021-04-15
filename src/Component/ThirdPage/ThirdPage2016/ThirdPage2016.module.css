@@ -622,3 +622,9 @@
 .arrows_left_right_insulin .arrow_second::before {
     right: 154px;
 }
+
+.lipid_text {
+    position: absolute;
+    left: 76px;
+    width: 150px;
+}

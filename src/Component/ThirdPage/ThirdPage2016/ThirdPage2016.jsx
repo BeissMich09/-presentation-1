@@ -192,7 +192,7 @@ const ThirdPage2016 = () => {
                 <div className={style.lipid_img}>
                   <img src={lipid} alt="" />
                 </div>
-                <div>
+                <div className={style.lipid_text}>
                   <p className={style.num}>4</p>
                   <p className={style.text}>Жировые клетки</p>
                 </div>
