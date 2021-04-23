@@ -8,7 +8,7 @@ const ThirdPage1998 = () => {
   return (
     <div className={style.thirdPage}>
       <img src={background} alt="" />
-      <h3>Звенья партеногенеза СД2</h3>
+      <h3>Звенья патогенеза СД2</h3>
       <div className={style.scheme}>
         <div className={style.beta}>
           <div className={style.beta_text}>

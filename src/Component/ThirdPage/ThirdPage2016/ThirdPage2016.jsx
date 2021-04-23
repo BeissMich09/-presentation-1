@@ -14,7 +14,7 @@ const ThirdPage2016 = () => {
   return (
     <div className={style.thirdPage}>
       <img src={background} alt="" />
-      <h3>Звенья партеногенеза СД2</h3>
+      <h3>Звенья патогенеза СД2</h3>
       <div className={style.scheme}>
         <div className={style.link_first_scheme}>
           <div className={style.intestine}>
