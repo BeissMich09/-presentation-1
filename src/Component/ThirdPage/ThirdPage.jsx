@@ -21,6 +21,15 @@ const ThirdPage = (props) => {
           onChange={(e) => {
             props.getInputValue(e.target.value);
           }}
+          onTouchEnd={() => {
+            if (+props.inputValue < 33) {
+              props.getInputValue(0);
+            } else if (+props.inputValue < 66) {
+              props.getInputValue(50);
+            } else if (+props.inputValue > 67) {
+              props.getInputValue(100);
+            }
+          }}
           className={style.range}
           value={props.inputValue}
           type="range"
