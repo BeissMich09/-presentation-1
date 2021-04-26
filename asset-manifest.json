@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/-presentation-1/static/css/main.16d96a18.chunk.css",
-    "main.js": "/-presentation-1/static/js/main.aceca028.chunk.js",
-    "main.js.map": "/-presentation-1/static/js/main.aceca028.chunk.js.map",
-    "runtime-main.js": "/-presentation-1/static/js/runtime-main.b959ec81.js",
-    "runtime-main.js.map": "/-presentation-1/static/js/runtime-main.b959ec81.js.map",
-    "static/js/2.bb8ae1f3.chunk.js": "/-presentation-1/static/js/2.bb8ae1f3.chunk.js",
-    "static/js/2.bb8ae1f3.chunk.js.map": "/-presentation-1/static/js/2.bb8ae1f3.chunk.js.map",
-    "static/js/3.730eee1b.chunk.js": "/-presentation-1/static/js/3.730eee1b.chunk.js",
-    "static/js/3.730eee1b.chunk.js.map": "/-presentation-1/static/js/3.730eee1b.chunk.js.map",
+    "main.js": "/-presentation-1/static/js/main.832b8a34.chunk.js",
+    "main.js.map": "/-presentation-1/static/js/main.832b8a34.chunk.js.map",
+    "runtime-main.js": "/-presentation-1/static/js/runtime-main.32b0de16.js",
+    "runtime-main.js.map": "/-presentation-1/static/js/runtime-main.32b0de16.js.map",
+    "static/js/2.1c917f2d.chunk.js": "/-presentation-1/static/js/2.1c917f2d.chunk.js",
+    "static/js/2.1c917f2d.chunk.js.map": "/-presentation-1/static/js/2.1c917f2d.chunk.js.map",
+    "static/js/3.e68a73eb.chunk.js": "/-presentation-1/static/js/3.e68a73eb.chunk.js",
+    "static/js/3.e68a73eb.chunk.js.map": "/-presentation-1/static/js/3.e68a73eb.chunk.js.map",
     "index.html": "/-presentation-1/index.html",
     "static/css/main.16d96a18.chunk.css.map": "/-presentation-1/static/css/main.16d96a18.chunk.css.map",
-    "static/js/2.bb8ae1f3.chunk.js.LICENSE.txt": "/-presentation-1/static/js/2.bb8ae1f3.chunk.js.LICENSE.txt",
+    "static/js/2.1c917f2d.chunk.js.LICENSE.txt": "/-presentation-1/static/js/2.1c917f2d.chunk.js.LICENSE.txt",
     "static/media/Page1.d8f08995.png": "/-presentation-1/static/media/Page1.d8f08995.png",
     "static/media/background2.9d50fb8b.png": "/-presentation-1/static/media/background2.9d50fb8b.png",
     "static/media/brain.a012b8db.png": "/-presentation-1/static/media/brain.a012b8db.png",
@@ -23,9 +23,9 @@
     "static/media/page3.44195d43.png": "/-presentation-1/static/media/page3.44195d43.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b959ec81.js",
-    "static/js/2.bb8ae1f3.chunk.js",
+    "static/js/runtime-main.32b0de16.js",
+    "static/js/2.1c917f2d.chunk.js",
     "static/css/main.16d96a18.chunk.css",
-    "static/js/main.aceca028.chunk.js"
+    "static/js/main.832b8a34.chunk.js"
   ]
 }
