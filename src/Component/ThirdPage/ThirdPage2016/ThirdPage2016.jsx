@@ -1,200 +1,263 @@
 import React from "react";
-import style from "./ThirdPage2016.module.css";
-import intestine from "./../../assets/intestine.png";
-import infection from "./../../assets/infection.png";
-import stomach from "./../../assets/stomach.png";
-import bud from "./../../assets/bud.png";
-import brain from "./../../assets/brain.png";
-import capa from "./../../assets/Capa.png";
-import musle from "./../../assets/musle.png";
-import lipid from "./../../assets/lipid-.png";
+import intestineImg from "./../../assets/intestine.png";
+import infectionImg from "./../../assets/infection.png";
+import stomachImg from "./../../assets/stomach.png";
+import budImg from "./../../assets/bud.png";
+import brainImg from "./../../assets/brain.png";
+import capaImg from "./../../assets/Capa.png";
+import musleImg from "./../../assets/musle.png";
+import lipidImg from "./../../assets/lipid-.png";
 import background from "./../../assets/page3.png";
+import {
+  thirdPage,
+  scheme,
+  link_first_scheme,
+  intestine,
+  intestine_text,
+  num,
+  text,
+  intestine_img,
+  infection,
+  infection_text,
+  infection_img,
+  amelin,
+  amelin_arrows,
+  amelin_arrow_l,
+  arrow,
+  amelin_arrow_r,
+  stomach,
+  stomach_text,
+  img_with_arrow_stomach,
+  stomach_img,
+  stomach_arrow,
+  arrows_colection,
+  arrows_left_right_intestine,
+  arrow_second,
+  arrows_left_right_infection,
+  link_second_scheme,
+  beta,
+  beta_text,
+  beta_beta,
+  arrows_beta,
+  arrow_beta_l_l,
+  arrow_beta_l,
+  arrow_beta_center,
+  arrow_beta_r,
+  link_second_scheme_container,
+  effect,
+  arrow_effect,
+  glucogon,
+  deffect_alpha,
+  effect_alpha_text,
+  arrow_alpha,
+  glucogon_with_arrow,
+  arrow_glucogon,
+  hyperglicemia_with_arrow,
+  img_with_arrow_bud,
+  arrows_left_right_bud,
+  bud,
+  bud_text,
+  bud_img,
+  arrows_left_right_brain_beta,
+  arrows_left_right_insulin,
+  link_third_scheme,
+  brain,
+  brain_img,
+  brain_text,
+  arrows_left_right_brain,
+  insulin_bodies,
+  insulin,
+  capa,
+  capa_img,
+  musle,
+  musle_img,
+  lipid,
+  lipid_img,
+  lipid_text,
+} from "./ThirdPage2016.module.css";
 
 const ThirdPage2016 = () => {
   return (
-    <div className={style.thirdPage}>
+    <div className={thirdPage}>
       <img src={background} alt="" />
       <h3>Звенья патогенеза СД2</h3>
-      <div className={style.scheme}>
-        <div className={style.link_first_scheme}>
-          <div className={style.intestine}>
-            <div className={style.intestine_text}>
-              <p className={style.num}>8</p>
-              <p className={style.text}>Микрофлора кишечника</p>
+      <div className={scheme}>
+        <div className={link_first_scheme}>
+          <div className={intestine}>
+            <div className={intestine_text}>
+              <p className={num}>8</p>
+              <p className={text}>Микрофлора кишечника</p>
             </div>
-            <div className={style.intestine_img}>
-              <img src={intestine} alt="" />
-            </div>
-          </div>
-          <div className={style.infection}>
-            <div className={style.infection_text}>
-              <p className={style.num}>9</p>
-              <p className={style.text}>
-                Нарушение имунной регуляции/воспаление
-              </p>
-            </div>
-            <div className={style.infection_img}>
-              <img src={infection} alt="" />
+            <div className={intestine_img}>
+              <img src={intestineImg} alt="" />
             </div>
           </div>
-          <div className={style.amelin}>
+          <div className={infection}>
+            <div className={infection_text}>
+              <p className={num}>9</p>
+              <p className={text}>Нарушение имунной регуляции/воспаление</p>
+            </div>
+            <div className={infection_img}>
+              <img src={infectionImg} alt="" />
+            </div>
+          </div>
+          <div className={amelin}>
             <p>↓ амилин</p>
-            <div className={style.amelin_arrows}>
-              <div className={style.amelin_arrow_l}>
-                <div className={style.arrow}></div>
+            <div className={amelin_arrows}>
+              <div className={amelin_arrow_l}>
+                <div className={arrow}></div>
               </div>
-              <div className={style.amelin_arrow_r}>
-                <div className={style.arrow}></div>
+              <div className={amelin_arrow_r}>
+                <div className={arrow}></div>
               </div>
             </div>
           </div>
-          <div className={style.stomach}>
-            <div className={style.stomach_text}>
-              <p className={style.num}>10</p>
-              <p className={style.text}>Желудок</p>
+          <div className={stomach}>
+            <div className={stomach_text}>
+              <p className={num}>10</p>
+              <p className={text}>Желудок</p>
             </div>
-            <div className={style.img_with_arrow_stomach}>
-              <div className={style.stomach_img}>
-                <img src={stomach} alt="" />
+            <div className={img_with_arrow_stomach}>
+              <div className={stomach_img}>
+                <img src={stomachImg} alt="" />
               </div>
-              <div className={style.stomach_arrow}>
-                <div className={style.arrow}></div>
+              <div className={stomach_arrow}>
+                <div className={arrow}></div>
               </div>
             </div>
           </div>
         </div>
-        <div className={style.arrows_colection}>
-          <div className={style.arrows_left_right_intestine}>
-            <span className={style.arrow}></span>
-            <span className={style.arrow_second}></span>
+        <div className={arrows_colection}>
+          <div className={arrows_left_right_intestine}>
+            <span className={arrow}></span>
+            <span className={arrow_second}></span>
           </div>
-          <div className={style.arrows_left_right_infection}>
-            <span className={style.arrow}></span>
-            <span className={style.arrow_second}></span>
+          <div className={arrows_left_right_infection}>
+            <span className={arrow}></span>
+            <span className={arrow_second}></span>
           </div>
         </div>
-        <div className={style.link_second_scheme}>
-          <div className={style.beta}>
-            <div className={style.beta_text}>
-              <p className={style.num}>1</p>
-              <p className={style.text}>&beta;-клетки</p>
+        <div className={link_second_scheme}>
+          <div className={beta}>
+            <div className={beta_text}>
+              <p className={num}>1</p>
+              <p className={text}>&beta;-клетки</p>
             </div>
-            <div className={style.beta_beta}>
+            <div className={beta_beta}>
               <p>&beta;</p>
             </div>
-            <div className={style.arrows_beta}>
-              <div className={style.arrow_beta_l_l}>
-                <div className={style.arrow}></div>
+            <div className={arrows_beta}>
+              <div className={arrow_beta_l_l}>
+                <div className={arrow}></div>
               </div>
-              <div className={style.arrow_beta_l}>
-                <div className={style.arrow}></div>
+              <div className={arrow_beta_l}>
+                <div className={arrow}></div>
               </div>
-              <div className={style.arrow_beta_center}>
-                <div className={style.arrow}></div>
+              <div className={arrow_beta_center}>
+                <div className={arrow}></div>
               </div>
-              <div className={style.arrow_beta_r}>
-                <div className={style.arrow}></div>
+              <div className={arrow_beta_r}>
+                <div className={arrow}></div>
               </div>
             </div>
           </div>
-          <div className={style.link_second_scheme_container}>
-            <div className={style.effect}>
-              <p className={style.num}>2</p>
-              <p className={style.text}>↓ инкретинового эффекта</p>
-              <div className={style.arrow_effect}>
-                <div className={style.arrow}></div>
+          <div className={link_second_scheme_container}>
+            <div className={effect}>
+              <p className={num}>2</p>
+              <p className={text}>↓ инкретинового эффекта</p>
+              <div className={arrow_effect}>
+                <div className={arrow}></div>
               </div>
             </div>
-            <div className={style.glucogon}>
-              <div className={style.deffect_alpha}>
-                <div className={style.effect_alpha_text}>
-                  <p className={style.num}>3</p>
-                  <p className={style.text}>Дефект &alpha;-клеток</p>
+            <div className={glucogon}>
+              <div className={deffect_alpha}>
+                <div className={effect_alpha_text}>
+                  <p className={num}>3</p>
+                  <p className={text}>Дефект &alpha;-клеток</p>
                 </div>
-                <div className={style.arrow_alpha}>
-                  <div className={style.arrow}></div>
+                <div className={arrow_alpha}>
+                  <div className={arrow}></div>
                 </div>
               </div>
-              <div className={style.glucogon_with_arrow}>
+              <div className={glucogon_with_arrow}>
                 <p>↑глюкагон</p>
-                <div className={style.arrow_glucogon}>
-                  <div className={style.arrow}></div>
+                <div className={arrow_glucogon}>
+                  <div className={arrow}></div>
                 </div>
               </div>
             </div>
           </div>
-          <div className={style.hyperglicemia_with_arrow}>
-            <div className={style.text}>Гипергликемия</div>
-            <div className={style.img_with_arrow_bud}>
-              <div className={style.arrows_left_right_bud}>
-                <span className={style.arrow}></span>
-                <span className={style.arrow_second}></span>
+          <div className={hyperglicemia_with_arrow}>
+            <div className={text}>Гипергликемия</div>
+            <div className={img_with_arrow_bud}>
+              <div className={arrows_left_right_bud}>
+                <span className={arrow}></span>
+                <span className={arrow_second}></span>
               </div>
             </div>
-            <div className={style.bud}>
-              <div className={style.bud_text}>
-                <p className={style.num}>11</p>
-                <p className={style.text}>Почки</p>
+            <div className={bud}>
+              <div className={bud_text}>
+                <p className={num}>11</p>
+                <p className={text}>Почки</p>
               </div>
 
-              <div className={style.bud_img}>
-                <img src={bud} alt="" />
+              <div className={bud_img}>
+                <img src={budImg} alt="" />
               </div>
             </div>
           </div>
         </div>
-        <div className={style.arrows_colection}>
-          <div className={style.arrows_left_right_brain_beta}>
-            <span className={style.arrow}></span>
-            <span className={style.arrow_second}></span>
+        <div className={arrows_colection}>
+          <div className={arrows_left_right_brain_beta}>
+            <span className={arrow}></span>
+            <span className={arrow_second}></span>
           </div>
-          <div className={style.arrows_left_right_insulin}>
-            <span className={style.arrow}></span>
-            <span className={style.arrow_second}></span>
+          <div className={arrows_left_right_insulin}>
+            <span className={arrow}></span>
+            <span className={arrow_second}></span>
           </div>
         </div>
-        <div className={style.link_third_scheme}>
-          <div className={style.brain}>
-            <div className={style.brain_img}>
-              <img src={brain} alt="" />
+        <div className={link_third_scheme}>
+          <div className={brain}>
+            <div className={brain_img}>
+              <img src={brainImg} alt="" />
             </div>
-            <div className={style.brain_text}>
-              <p className={style.num}>7</p>{" "}
-              <p className={style.text}>Головной мозг</p>
-              <div className={style.arrows_left_right_brain}>
-                <span className={style.arrow}></span>
-                <span className={style.arrow_second}></span>
+            <div className={brain_text}>
+              <p className={num}>7</p> <p className={text}>Головной мозг</p>
+              <div className={arrows_left_right_brain}>
+                <span className={arrow}></span>
+                <span className={arrow_second}></span>
               </div>
             </div>
           </div>
-          <div className={style.insulin}>
+          <div className={insulin}>
             <p>Инсулинорезистентность</p>
-            <div className={style.insulin_bodies}>
-              <div className={style.capa}>
-                <div className={style.capa_img}>
-                  <img src={capa} alt="" />
+            <div className={insulin_bodies}>
+              <div className={capa}>
+                <div className={capa_img}>
+                  <img src={capaImg} alt="" />
                 </div>
                 <div>
-                  <p className={style.num}>6</p>
-                  <p className={style.text}>Печень</p>
+                  <p className={num}>6</p>
+                  <p className={text}>Печень</p>
                 </div>
               </div>
-              <div className={style.musle}>
-                <div className={style.musle_img}>
-                  <img src={musle} alt="" />
+              <div className={musle}>
+                <div className={musle_img}>
+                  <img src={musleImg} alt="" />
                 </div>
                 <div>
-                  <p className={style.num}>5</p>
-                  <p className={style.text}>Мышцы</p>
+                  <p className={num}>5</p>
+                  <p className={text}>Мышцы</p>
                 </div>
               </div>
-              <div className={style.lipid}>
-                <div className={style.lipid_img}>
-                  <img src={lipid} alt="" />
+              <div className={lipid}>
+                <div className={lipid_img}>
+                  <img src={lipidImg} alt="" />
                 </div>
-                <div className={style.lipid_text}>
-                  <p className={style.num}>4</p>
-                  <p className={style.text}>Жировые клетки</p>
+                <div className={lipid_text}>
+                  <p className={num}>4</p>
+                  <p className={text}>Жировые клетки</p>
                 </div>
               </div>
             </div>

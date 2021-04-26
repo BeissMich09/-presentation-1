@@ -1,64 +1,87 @@
 import React from "react";
 import background from "./../../assets/page3.png";
-import style from "./ThirdPage1998.module.css";
-import musle from "./../../assets/musle.png";
-import capa from "./../../assets/Capa.png";
+import musleImg from "./../../assets/musle.png";
+import capaImg from "./../../assets/Capa.png";
+import {
+  thirdPage,
+  scheme,
+  beta,
+  beta_text,
+  num,
+  text,
+  beta_beta,
+  arrows_beta,
+  arrow_beta_l,
+  arrow,
+  arrow_beta_center,
+  arrow_beta_r,
+  scheme_second_link,
+  musle,
+  musle_text,
+  img_with_arrow,
+  musle_img,
+  arrow_musle,
+  hyperglycemia,
+  capa,
+  capa_text,
+  arrow_capa,
+  capa_img,
+} from "./ThirdPage1998.module.css";
 
 const ThirdPage1998 = () => {
   return (
-    <div className={style.thirdPage}>
+    <div className={thirdPage}>
       <img src={background} alt="" />
       <h3>Звенья патогенеза СД2</h3>
-      <div className={style.scheme}>
-        <div className={style.beta}>
-          <div className={style.beta_text}>
-            <p className={style.num}>1</p>{" "}
-            <p className={style.text}>&beta;-клетки</p>
+      <div className={scheme}>
+        <div className={beta}>
+          <div className={beta_text}>
+            <p className={num}>1</p> <p className={text}>&beta;-клетки</p>
           </div>
-          <div className={style.beta_beta}>
+          <div className={beta_beta}>
             <p>&beta;</p>
           </div>
         </div>
-        <div className={style.arrows_beta}>
-          <div className={style.arrow_beta_l}>
-            <div className={style.arrow}></div>
+        <div className={arrows_beta}>
+          <div className={arrow_beta_l}>
+            <div className={arrow}></div>
           </div>
-          <div className={style.arrow_beta_center}>
-            <div className={style.arrow}></div>
+          <div className={arrow_beta_center}>
+            <div className={arrow}></div>
           </div>
-          <div className={style.arrow_beta_r}>
-            <div className={style.arrow}></div>
+          <div className={arrow_beta_r}>
+            <div className={arrow}></div>
           </div>
         </div>
-        <div className={style.scheme_second_link}>
-          <div className={style.musle}>
-            <div className={style.musle_text}>
-              <p className={style.num}>2</p>
-              <p className={style.text}>Мышцы</p>
+        <div className={scheme_second_link}>
+          <div className={musle}>
+            <div className={musle_text}>
+              <p className={num}>2</p>
+              <p className={text}>Мышцы</p>
             </div>
-            <div className={style.img_with_arrow}>
-              <div className={style.musle_img}>
-                <img src={musle} alt="" />
+            <div className={img_with_arrow}>
+              <div className={musle_img}>
+                <img src={musleImg} alt="" />
               </div>
-              <div className={style.arrow_musle}>
-                <div className={style.arrow}></div>
+              <div className={arrow_musle}>
+                <div className={arrow}></div>
               </div>
             </div>
           </div>
 
-          <div className={style.hyperglycemia}>Гипергликемия</div>
+          <div className={hyperglycemia}>Гипергликемия</div>
 
-          <div className={style.capa}>
-            <div className={style.capa_text}>
-              <p className={style.num}>3</p>
-              <p className={style.text}>Печень</p>
+          <div className={capa}>
+            <div className={capa_text}>
+              <p className={num}>3</p>
+              <p className={text}>Печень</p>
             </div>
-            <div className={style.img_with_arrow}>
-              <div className={style.arrow_capa}>
-                <div className={style.arrow}></div>
+            <div className={img_with_arrow}>
+              <div className={arrow_capa}>
+                <div className={arrow}></div>
               </div>
-              <div className={style.capa_img}>
-                <img src={capa} alt="" />
+              <div className={capa_img}>
+                <img src={capaImg} alt="" />
               </div>
             </div>
           </div>

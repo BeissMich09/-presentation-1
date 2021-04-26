@@ -1,33 +1,66 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SecondPage from "./../SecondPage/SecondPage";
 import TitlePage from "./../TitlePage/TitlePage";
 import ThirdPageContainer from "./../ThirdPage/ThirdPageContainer";
 
-class Container extends React.Component {
-  state = {
-    count: 0,
+const Container = () => {
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return function cleanup() {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const [touchStart, setTouchStart] = useState(0);
+  const [count, setCount] = useState(0);
+
+  let touchEnd = 0;
+  const setTouchEnd = (value) => {
+    touchEnd = value;
   };
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
+  function handleTouchStart(e) {
+    setTouchStart(e.targetTouches[0].clientY);
   }
 
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
+  function handleTouchMove(e) {
+    setTouchEnd(e.targetTouches[0].clientY);
   }
-  handleScroll = () => {
-    this.setState({ count: window.pageYOffset });
+
+  function handleTouchEnd() {
+    if (touchStart - touchEnd > 500) {
+      setCount(count >= 2 ? 2 : count + 1);
+    } else if (touchStart - touchEnd < -500) {
+      setCount(count <= 0 ? 0 : count - 1);
+    }
+  }
+  const handleScroll = () => {
+    if (window.pageYOffset < 500 ) {
+      setCount(0);
+    } else if (window.pageYOffset < 1200) {
+      setCount(1);
+    } else if (window.pageYOffset > 1200) {
+      setCount(2);
+    }
   };
-
-  render() {
-    return (
-      <div className="App">
-        <TitlePage state={this.state} changeStatePage={this.changeStatePage} />
-        <SecondPage changeStatePage={this.changeStatePage} />
-        <ThirdPageContainer changeStatePage={this.changeStatePage} />
-      </div>
-    );
-  }
-}
+  return (
+    <div
+      onTouchMove={(e) => {
+        handleTouchMove(e);
+      }}
+      onTouchStart={(e) => {
+        handleTouchStart(e);
+      }}
+      onTouchEnd={() => {
+        handleTouchEnd();
+      }}
+      className="App"
+    >
+      <TitlePage count={count} />
+      <SecondPage />
+      <ThirdPageContainer />
+    </div>
+  );
+};
 
 export default Container;

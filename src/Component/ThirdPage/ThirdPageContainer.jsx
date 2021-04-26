@@ -12,7 +12,6 @@ class ThirdPageContainer extends React.Component {
   render() {
     return (
       <ThirdPage
-        changeStatePage={this.props.changeStatePage}
         inputValue={this.state.inputValue}
         getInputValue={this.getInputValue}
       />

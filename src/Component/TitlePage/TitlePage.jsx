@@ -7,19 +7,9 @@ const TitlePage = (props) => {
     <div className={style.titlePage}>
       <img src={background} alt="" />
       <div className={style.point_menu}>
-        <div
-          className={props.state.count < 400 ? style.orange : style.white}
-        ></div>
-        <div
-          className={
-            props.state.count > 400 && props.state.count < 1100
-              ? style.orange
-              : style.white
-          }
-        ></div>
-        <div
-          className={props.state.count > 1100 ? style.orange : style.white}
-        ></div>
+        <div className={props.count === 0 ? style.orange : style.white}></div>
+        <div className={props.count === 1 ? style.orange : style.white}></div>
+        <div className={props.count === 2 ? style.orange : style.white}></div>
       </div>
       <h1>Всегда ли цели терапии СД2 на поверхности?</h1>
 
