@@ -2,7 +2,7 @@ import React from "react";
 import background from "./../assets/background2.png";
 import style from "./SecondPage.module.css";
 
-const SecondPage = (props) => {
+const SecondPage = () => {
   return (
     <div className={style.secondPage}>
       <img src={background} alt="" />

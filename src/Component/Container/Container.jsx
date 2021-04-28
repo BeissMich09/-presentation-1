@@ -6,6 +6,7 @@ import ThirdPageContainer from "./../ThirdPage/ThirdPageContainer";
 const Container = () => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+
     return function cleanup() {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -28,21 +29,36 @@ const Container = () => {
   }
 
   function handleTouchEnd() {
-    if (touchStart - touchEnd > 500) {
-      setCount(count >= 2 ? 2 : count + 1);
-    } else if (touchStart - touchEnd < -500) {
-      setCount(count <= 0 ? 0 : count - 1);
+    let result;
+    // листание вниз, свайп вверх
+    if (touchStart - touchEnd > 50) {
+      result = count >= 2 ? 2 : count + 1;
+      window.scrollBy(0, result === 2 ? 1536 : 768 - window.pageYOffset);
+      // листание вверх, свайп вниз
+    } else if (touchStart - touchEnd < -50) {
+      result = count <= 0 ? 0 : count - 1;
+      window.scrollBy(
+        0,
+        result === 0 ? -window.pageYOffset : 768 - window.pageYOffset
+      );
+    } else if (result !== count) {
+      setCount(result);
     }
   }
   const handleScroll = () => {
-    if (window.pageYOffset < 500 ) {
-      setCount(0);
-    } else if (window.pageYOffset < 1200) {
-      setCount(1);
+    let result;
+
+    if (window.pageYOffset < 500) {
+      result = 0;
+    } else if (window.pageYOffset <= 1200) {
+      result = 1;
     } else if (window.pageYOffset > 1200) {
-      setCount(2);
+      result = 2;
     }
-  };
+
+    setCount(result);
+  }
+
   return (
     <div
       onTouchMove={(e) => {

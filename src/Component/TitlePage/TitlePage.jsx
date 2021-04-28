@@ -1,40 +1,53 @@
 import React from "react";
 import background from "./../assets/Page1.png";
-import style from "./TitlePage.module.css";
+import {
+  target,
+  point,
+  hypoglycemia,
+  orange,
+  white,
+  titlePage,
+  point_menu,
+  risks,
+  complications,
+  down,
+  arrow,
+  horizont_line,
+} from "./TitlePage.module.css";
 
-const TitlePage = (props) => {
+const TitlePage = ({ count }) => {
   return (
-    <div className={style.titlePage}>
+    <div className={titlePage}>
       <img src={background} alt="" />
-      <div className={style.point_menu}>
-        <div className={props.count === 0 ? style.orange : style.white}></div>
-        <div className={props.count === 1 ? style.orange : style.white}></div>
-        <div className={props.count === 2 ? style.orange : style.white}></div>
+      <div className={point_menu}>
+        <div className={count === 0 ? orange : white}></div>
+        <div className={count === 1 ? orange : white}></div>
+        <div className={count === 2 ? orange : white}></div>
       </div>
       <h1>Всегда ли цели терапии СД2 на поверхности?</h1>
 
-      <div className={style.target}>
-        <div className={style.point}></div>
+      <div className={target}>
+        <div className={point}></div>
         <p>Цель по HbA1c</p>
       </div>
-      <div className={style.hypoglycemia}>
+      <div className={hypoglycemia}>
         <p>Гипогликемия</p>
-        <div className={style.point}></div>
+        <div className={point}></div>
       </div>
-      <div className={style.risks}>
+      <div className={risks}>
         <p>СС риски</p>
-        <div className={style.point}></div>
+        <div className={point}></div>
       </div>
-      <div className={style.complications}>
+      <div className={complications}>
         <p>Осложнения СД</p>
-        <div className={style.point}></div>
+        <div className={point}></div>
       </div>
 
-      <div className={style.down}>
+      <div className={down}>
         <p>Листайте вниз</p>
-        <div className={style.arrow}></div>
+        <div className={arrow}></div>
       </div>
-      <div className={style.horizont_line}></div>
+      <div className={horizont_line}></div>
     </div>
   );
 };
